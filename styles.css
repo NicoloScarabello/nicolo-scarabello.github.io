@@ -1,0 +1,54 @@
+.window {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    border: 2px solid #000;
+}
+
+.carousel:not(.no-overflow) .window {
+    overflow: hidden;
+}
+
+.carousel .slides {
+    position: absolute;
+}
+
+.slides {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.image {
+    flex: 0 0 400px;
+    display: inline-block;
+    width: 400px;
+    height: 200px;
+}
+
+.image.red {
+    background: #F00;
+}
+
+.image.green {
+    background: #0F0;
+}
+
+.image.blue {
+    background: #00F;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+canvas {
+    border: 1px solid #ccc;
+    display: block;
+    margin-top: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
